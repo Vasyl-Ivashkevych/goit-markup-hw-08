@@ -1,0 +1,38 @@
+.section__clients {
+  @include section;
+}
+
+.clients__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 0.86;
+  text-align: center;
+  color: var(--black-title);
+}
+
+.clients__list {
+  display: flex;
+}
+
+.clients__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients__link {
+  display: block;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    fill: var(--accent);
+    border: 1px solid var(--accent);
+  }
+}

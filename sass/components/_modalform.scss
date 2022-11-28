@@ -1,0 +1,117 @@
+.modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--black-title);
+}
+
+.group__label {
+  position: relative;
+  display: flex;
+  transition: 250ms var(--timing-function);
+}
+
+.form__icon {
+  position: absolute;
+  top: 11px;
+  left: 12px;
+}
+
+.modal__input {
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: unset;
+
+  &:not(:last-child) {
+    margin-bottom: 28px;
+  }
+}
+
+.modal__input:focus {
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+}
+
+.modal__input:focus + .form__thumb {
+  fill: var(--accent);
+}
+
+.form__comment {
+  width: 448px;
+  height: 120px;
+  resize: none;
+  color: var(--basic-text);
+  padding: 12px 16px;
+  outline: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    border: 1px solid var(--accent);
+    border-radius: 4px;
+  }
+}
+
+.form__agreement {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.form__checkbox {
+  appearance: none;
+}
+
+.form__checkbox-icon .unchecked {
+  opacity: 1;
+  cursor: pointer;
+  transition: 250ms var(--timing-function);
+}
+
+.form__checkbox:checked + .form__checkbox-icon .unchecked {
+  opacity: 0;
+}
+
+.form__checkbox-icon .checked {
+  opacity: 0;
+  cursor: pointer;
+  transition: 250ms var(--timing-function);
+}
+
+.form__checkbox:checked + .form__checkbox-icon .checked {
+  opacity: 1;
+}
+
+.form__name {
+  display: block;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 0.86;
+  letter-spacing: 0.01em;
+  color: var(--basic-text);
+}
+
+.confidens__link {
+  font-size: 14px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+  color: var(--accent);
+}
+
+.form__confidens-text {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--basic-text);
+}

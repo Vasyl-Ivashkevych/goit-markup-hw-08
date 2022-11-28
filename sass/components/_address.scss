@@ -1,0 +1,25 @@
+.address {
+  flex-direction: column;
+  font-style: normal;
+  margin-right: 70px;
+}
+
+.address__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: var(--secondary-color);
+  line-height: 1.71;
+  text-decoration: none;
+  transition: 250ms var(--timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent);
+  }
+}
+
+.address__link-style {
+  color: var(--additional-color);
+}
