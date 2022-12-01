@@ -18,6 +18,18 @@
 .strengths__list {
   display: flex;
   gap: 30px;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .strengths__list-item {
@@ -32,6 +44,18 @@
   border-radius: 4px;
   width: 270px;
   height: 120px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+  
+  @media screen and (min-width: $desktop) {
+    width: 270px;
+  } 
 }
 
 .strengths__title {
@@ -42,6 +66,18 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: start;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .strengths__text {
