@@ -316,6 +316,7 @@ img {
 .strengths {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: aqua;
 }
 
 .strengths__list {
