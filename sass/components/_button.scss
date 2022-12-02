@@ -17,6 +17,18 @@
   min-height: 50px;
   transition: background-color 250ms var(--timing-function);
 
+  @media screen and (min-width: $mobile) {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 24px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 24px;
+  }
+
   &:hover,
   &:focus {
     background-color: var(--bacground-btn-hover-color);
@@ -59,6 +71,7 @@
 .form__button-icon {
   margin-left: 10px;
 }
+
 .modal__button {
   position: absolute;
   top: 8px;
@@ -81,6 +94,7 @@
   fill: var(--accent);
 }
 }
+
 .form__btn {
   display: block;
   margin: 0 auto;

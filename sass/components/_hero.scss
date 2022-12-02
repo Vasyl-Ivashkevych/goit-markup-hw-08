@@ -16,7 +16,14 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media screen and ( max-width: 767px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
 }
+
 .hero__title {
   max-width: 696px;
   margin-top: 0;
@@ -29,4 +36,18 @@
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  @media screen and (min-width: $mobile) {
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+
+  @media screen and (min-width: $tablet) {
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }

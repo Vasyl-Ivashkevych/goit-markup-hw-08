@@ -141,6 +141,20 @@ img {
   -webkit-transition: background-color 250ms var(--timing-function);
   transition: background-color 250ms var(--timing-function);
 }
+@media screen and (min-width: 480px) {
+  .hero__btn {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 24px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__btn {
+    min-width: 200px;
+    min-height: 50px;
+    padding: 10px 24px;
+  }
+}
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--bacground-btn-hover-color);
   -webkit-box-shadow: var(--button-shadow);
@@ -341,6 +355,13 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .hero__container {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+  }
+}
 
 .hero__title {
   max-width: 696px;
@@ -354,6 +375,22 @@ img {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 480px) {
+  .hero__title {
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero__title {
+    max-width: 360px;
+    margin-bottom: 30px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -477,6 +514,11 @@ img {
   padding-top: 0;
   padding-bottom: 94px;
 }
+@media screen and (max-width: 767px) {
+  .skill {
+    display: none;
+  }
+}
 
 .skill__title {
   margin-top: 0;
@@ -523,6 +565,18 @@ img {
   padding-bottom: 94px;
   background-color: var(--section-bacground-color);
 }
+@media screen and (min-width: 480px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
 
 .team__title {
   margin-top: 0;
@@ -539,11 +593,20 @@ img {
   display: -ms-flexbox;
   display: flex;
 }
-
+@media screen and (min-width: 480px) {
+  .team__list {
+    display: block;
+  }
+}
 .team__item {
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+@media screen and (min-width: 480px) {
+  .team__item {
+    display: block;
+  }
 }
 .team__item:not(:last-child) {
   margin-right: 30px;
