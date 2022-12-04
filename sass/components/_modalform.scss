@@ -21,7 +21,7 @@
 }
 
 .modal__input {
-  max-width: 448px;
+  width: 100%;
   height: 40px;
   padding-left: 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -43,7 +43,7 @@
 }
 
 .form__comment {
-  width: 448px;
+  width: 100%;
   height: 120px;
   resize: none;
   color: var(--basic-text);
@@ -105,13 +105,13 @@
 
 .confidens__link {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 0.86;
   text-decoration-line: underline;
   color: var(--accent);
 }
 
 .form__confidens-text {
   font-size: 14px;
-  line-height: 1.71;
+  line-height: 0.86;
   color: var(--basic-text);
 }

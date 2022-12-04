@@ -1,14 +1,45 @@
 .portfolio {
-  @include section;
+  @media screen and (min-width: $mobile) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__btns-item {
-  display: flex;
-  justify-content: center;
   margin-top: 0;
-  margin-bottom: 50px;
   padding-left: 0;
   list-style: none;
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    list-style: none;
+  }
 }
 
 .portfolio__btns-list:not(:last-child) {
@@ -80,6 +111,18 @@
 .heading {
   padding: 20px;
   padding-left: 24px;
+
+  @media screen and (min-width: $mobile) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 370px;
+  }
 }
 
 .heading__title {

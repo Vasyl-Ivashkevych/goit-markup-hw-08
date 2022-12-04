@@ -75,17 +75,17 @@
   }
 
   @media screen and (min-width: $mobile) {
-    width: 210px;
+    min-width: 210px;
     padding: 16px 52px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 226px;
+    min-width: 226px;
     padding: 16px 60px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 170px;
+    min-width: 170px;
     padding: 16px 32px;
   }
 }
