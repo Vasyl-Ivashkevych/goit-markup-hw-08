@@ -1,13 +1,40 @@
 .forma {
-  margin-left: 93px;
+  @media screen and (min-width: $mobile) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .form {
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  justify-content: center;
-  margin-top: 20px;
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $mobile) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 
 .forma__title {
@@ -17,6 +44,21 @@
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--additional-color);
+
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+    margin-bottom: 20px;
+  }
 }
 
 .form__input {
@@ -37,7 +79,21 @@
 
 .form__label {
   display: block;
-  width: 358px;
   font-size: 16px;
   line-height: 1.25;
+
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    width: 450px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin: 0;
+    width: 358px;
+  }
 }

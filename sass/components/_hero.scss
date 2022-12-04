@@ -17,7 +17,7 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and ( max-width: 767px) {
+  @media screen and (max-width: 767px) {
     padding-top: 118px;
     padding-bottom: 118px;
     height: 400px;
@@ -29,11 +29,8 @@
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 35px;
   color: var(--additional-color);
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -49,5 +46,12 @@
     margin-bottom: 30px;
     font-size: 26px;
     line-height: 1.62;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-bottom: 35px;
   }
 }

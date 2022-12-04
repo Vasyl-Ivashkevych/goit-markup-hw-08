@@ -5,7 +5,21 @@
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @media screen and (min-width: $mobile) {
+    text-align: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    text-align: start;
+  }
 }

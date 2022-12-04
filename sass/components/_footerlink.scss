@@ -1,15 +1,33 @@
+.social {
+  @media screen and (min-width: $mobile) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 102px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .social__title {
   display: inline-block;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 0.86;
+  line-height: 0.87;
   text-transform: uppercase;
   color: var(--additional-color);
 }
 
 .social__list {
   display: flex;
+
+  @media screen and (min-width: $mobile) {
+    justify-content: center;
+  }
 }
 
 .social__item:not(:last-child) {

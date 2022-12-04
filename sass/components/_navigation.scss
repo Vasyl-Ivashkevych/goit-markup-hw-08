@@ -8,7 +8,14 @@
 
 .nav__list {
   display: flex;
-  margin-left: 93px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 87px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-left: 93px;
+  }
 }
 
 .nav__list-item:not(:last-child) {
