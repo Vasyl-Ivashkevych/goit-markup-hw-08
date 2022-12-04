@@ -1,0 +1,125 @@
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent);
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: var(--additional-color);
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: var(--additional-color);
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  margin-bottom: auto;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--black-title);
+  text-decoration: none;
+}
+
+.mobile-menu .link:hover,
+.mobile-menu .link:focus {
+  color: var(--accent);
+}
+
+.mobile-menu-item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.mobile-contacts-tel {
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  margin-bottom: 22px;
+  text-decoration: none;
+}
+
+.mobile-contacts-mail {
+  display: inline-block;
+  padding: 10px;
+  margin-bottom: 54px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--basic-text);
+}
+
+.mobile-social {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mobile-social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mobile-social-link {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+  text-decoration: none;
+}
