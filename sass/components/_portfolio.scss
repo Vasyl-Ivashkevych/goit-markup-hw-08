@@ -23,14 +23,14 @@
   @media screen and (min-width: $mobile) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: start;
+    row-gap: 15px;
     margin-bottom: 40px;
   }
 
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
-    align-items: center;
     margin-bottom: 30px;
   }
 
@@ -50,11 +50,28 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+
+  @media screen and (min-width: $mobile) {
+  }
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+
+  @media screen and (min-width: $desktop) {
+  }
 }
 
 .portfolio__item {
   flex-basis: calc((100% - 60px) / 3);
   background-color: var(--additional-color);
+
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }
 
 .portfolio__item:nth-child(3n) {
@@ -113,15 +130,15 @@
   padding-left: 24px;
 
   @media screen and (min-width: $mobile) {
-    width: 450px;
+    min-width: 450px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    min-width: 354px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 370px;
+    min-width: 370px;
   }
 }
 

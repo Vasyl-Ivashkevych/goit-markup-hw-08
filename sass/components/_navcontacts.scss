@@ -68,8 +68,15 @@
 }
 
 .contacts__link-icon {
-  margin-right: 10px;
   fill: currentColor;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 10px;
+  }
 }
 
 
