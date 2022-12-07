@@ -24,13 +24,12 @@
   transition: 250ms var(--timing-function);
 
   @media screen and (max-width: 1199.98) {
-    width: 100%;
     max-width: 450px;
     min-height: 609px;
   }
 
   @media screen and (min-width: $desktop) {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }
