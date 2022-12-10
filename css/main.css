@@ -1725,15 +1725,33 @@ img {
 }
 
 .confidens__link {
-  font-size: 14px;
   line-height: 0.86;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: var(--accent);
 }
+@media screen and (max-width: 1199.98px) {
+  .confidens__link {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confidens__link {
+    font-size: 14px;
+  }
+}
 
 .form__confidens-text {
-  font-size: 14px;
   line-height: 0.86;
   color: var(--basic-text);
+}
+@media screen and (max-width: 1199.98px) {
+  .form__confidens-text {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__confidens-text {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */

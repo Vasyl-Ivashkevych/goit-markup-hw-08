@@ -104,14 +104,28 @@
 }
 
 .confidens__link {
-  font-size: 14px;
   line-height: 0.86;
   text-decoration-line: underline;
   color: var(--accent);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
 
 .form__confidens-text {
-  font-size: 14px;
   line-height: 0.86;
   color: var(--basic-text);
+
+  @media screen and (max-width: 1199.98px) {
+    font-size: 12px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
