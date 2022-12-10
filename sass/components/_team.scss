@@ -31,7 +31,7 @@
 .team__list {
   display: flex;
  
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

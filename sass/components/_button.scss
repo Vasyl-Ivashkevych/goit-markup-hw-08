@@ -12,22 +12,24 @@
 }
 
 .hero__btn {
-  padding: 10px 32px;
-  min-width: 216px;
+  display: block;
+  padding: 10px 24px;
   min-height: 50px;
+  margin-left: auto;
+  margin-right: auto;
   transition: background-color 250ms var(--timing-function);
 
-  @media screen and (min-width: $mobile) {
-    min-width: 200px;
-    min-height: 50px;
-    padding: 10px 24px;
-  }
+  // @media screen and (min-width: $mobile) {
+  //   max-width: 200px;
+  //   // min-height: 50px;
+  //   padding: 10px 24px;
+  // }
 
-  @media screen and (min-width: $tablet) {
-    min-width: 200px;
-    min-height: 50px;
-    padding: 10px 24px;
-  }
+  // @media screen and (min-width: $tablet) {
+  //   max-width: 200px;
+  //   // min-height: 50px;
+  //   padding: 10px 24px;
+  // }
 
   &:hover,
   &:focus {
@@ -81,7 +83,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  width: 30px;
+  min-width: 30px;
   height: 30px;
   fill: #000000;
   background-color: inherit;

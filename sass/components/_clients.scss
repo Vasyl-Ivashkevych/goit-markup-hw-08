@@ -1,13 +1,6 @@
 .section__clients {
-  @media screen and (min-width: $mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
@@ -16,58 +9,61 @@
 }
 
 .clients__title {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 30px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 50px;
-  }
-
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 0.86;
   text-align: center;
   color: var(--black-title);
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+  }
 }
 
 .clients__list {
-  @media screen and (min-width: $mobile) {
-    display: flex;
-    row-gap: 30px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    row-gap: 30px;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   @media screen and (min-width: $desktop) {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: space-between;
   }
 }
 
 .clients__item {
-  flex-basis: calc((100% - 150px) / 6);
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+    max-width: 210px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+    max-width: 226px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 6 * 30px) / 6);
+    margin: 15px;
+    max-width: 170px;
+  }
 }
 
 .clients__link {
   display: block;
-  height: 92px;
-  padding: 16px 32px;
+  text-align: center;
+  padding: 16px 0;
+  min-height: 92px;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -77,20 +73,5 @@
   &:focus {
     fill: var(--accent);
     border: 1px solid var(--accent);
-  }
-
-  @media screen and (min-width: $mobile) {
-    max-width: 210px;
-    padding: 16px 52px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    max-width: 226px;
-    padding: 16px 60px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    max-width: 170px;
-    padding: 16px 32px;
   }
 }

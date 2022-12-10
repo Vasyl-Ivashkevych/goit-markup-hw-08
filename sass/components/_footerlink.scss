@@ -1,7 +1,6 @@
 .social {
-  @media screen and (min-width: $mobile) {
-    margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
+  text-align: center;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 102px;
@@ -9,6 +8,7 @@
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 0;
+    text-align: start;
   }
 }
 
@@ -24,10 +24,8 @@
 
 .social__list {
   display: flex;
-
-  @media screen and (min-width: $mobile) {
-    justify-content: center;
-  }
+  align-items: center;
+  justify-content: center;
 }
 
 .social__item:not(:last-child) {
@@ -36,7 +34,7 @@
 
 .social__link {
   display: block;
-  width: 44px;
+  min-width: 44px;
   height: 44px;
   padding: 12px;
   border-radius: 50%;

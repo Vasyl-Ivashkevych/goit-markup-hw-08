@@ -1,10 +1,8 @@
 .address {
-  @media screen and (min-width: $mobile) {
-    text-align: center;
-    margin-right: 0;
-    margin-bottom: 60px;
-    font-style: normal;
-  }
+  text-align: center;
+  margin-right: 0;
+  margin-bottom: 60px;
+  font-style: normal;
 
   @media screen and (min-width: $desktop) {
     text-align: start;
@@ -16,7 +14,7 @@
 }
 
 .address__item {
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     &:not(:last-child) {
       margin-bottom: 8px;
     }

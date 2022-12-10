@@ -1,13 +1,6 @@
 .strengths {
-  @media screen and (min-width: $mobile) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
@@ -15,11 +8,32 @@
   }
 }
 
+// .strengths__list {
+//   display: flex;
+//   flex-wrap: wrap;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   gap: 30px;
+
+//   @media screen and (min-width: $tablet) {
+//     display: flex;
+//     gap: 30px;
+//     flex-wrap: wrap;
+//   }
+
+//   @media screen and (min-width: $desktop) {
+//     display: flex;
+//     flex-direction: row;
+//     flex-wrap: wrap;
+//   }
+// }
+
 .strengths__list {
   display: flex;
   gap: 30px;
 
-  @media screen and (min-width: $mobile) {
+  @media screen and (max-width: 767px) {
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
@@ -27,13 +41,18 @@
 
   @media screen and (min-width: $tablet) {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
   }
 }
 
 .strengths__list-item {
-  flex-basis: calc((100% - 90px) / 4);
+  @media screen and (min-width: $tablet) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .strengths__logo {
@@ -42,19 +61,18 @@
   justify-content: center;
   background-color: var(--section-bacground-color);
   border-radius: 4px;
-  width: 270px;
-  height: 120px;
+  padding: 25px 0;
 
-  @media screen and (min-width: $mobile) {
-    width: 450px;
+  @media screen and (max-width: 767px) {
+    max-width: 450px;
   }
 
   @media screen and (min-width: $tablet) {
-    width: 354px;
+    max-width: 354px;
   }
   
   @media screen and (min-width: $desktop) {
-    width: 270px;
+    max-width: 270px;
   } 
 }
 
@@ -65,11 +83,8 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
+  text-align: center;
   text-transform: uppercase;
-
-  @media screen and (min-width: $mobile) {
-    text-align: center;
-  }
 
   @media screen and (min-width: $tablet) {
     text-align: start;
